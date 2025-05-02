@@ -1,0 +1,229 @@
+{
+  "main": {
+    "id": "6a823f62b207d0b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "fc93e65be75d61b0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0bf5219b357ac379",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "989fa3b213fec470",
+    "type": "split",
+    "children": [
+      {
+        "id": "b00fd101e00f11be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40e04f8cbdb1f2f7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "000821c21fb047c2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "8e5d81fc6b8170fa",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 294.5
+  },
+  "right": {
+    "id": "0e1756b3ee60238b",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0ba2ddc990711d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "047feed725748d2c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3-DeepLearning/3.1 神经元和神经网络.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "3.1 神经元和神经网络 的反向链接列表"
+            }
+          },
+          {
+            "id": "a63f8c1d220429bc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "3-DeepLearning/3.1 神经元和神经网络.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "3.1 神经元和神经网络 的出链列表"
+            }
+          },
+          {
+            "id": "b07137a7d6c09304",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e3045da1741fa3c9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          },
+          {
+            "id": "57df933338ca1612",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "插件不再活动"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 268.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": true,
+      "daily-notes:打开/创建今天的日记": true,
+      "templates:插入模板": true,
+      "command-palette:打开命令面板": false,
+      "copilot:Open Copilot Chat": false
+    }
+  },
+  "active": "0bf5219b357ac379",
+  "lastOpenFiles": [
+    "IBM-AI-Engineer-Course/IBM-0-Course Introduction and Study Plan.md",
+    "5-ComputerVision/图像增强.md",
+    "1-EssentialBasics/1.0 基础数学.md",
+    "3-DeepLearning/3.3 卷积神经网络 CNN.md",
+    "3-DeepLearning/3.2 深度学习模型 (分类).md",
+    "3-DeepLearning/3.1 神经元和神经网络.md",
+    "2-MachineLearning/机器学习图谱.canvas",
+    "2-MachineLearning/2.7 模型评估、调优与实践.md",
+    "2-MachineLearning/2.6 无监督学习常用算法.md",
+    "2-MachineLearning/2.5 监督学习常用算法.md",
+    "2-MachineLearning/2.4 梯度下降和损失函数.md",
+    "2-MachineLearning/2.3 特征和特征工程.md",
+    "2-MachineLearning/2.2 机器学习的分类.md",
+    "2-MachineLearning/2.1 机器学习概述.md",
+    "Pasted image 20250502222612.png",
+    "Pasted image 20250502222547.png",
+    "Pasted image 20250502222212.png",
+    "Pasted image 20250502222145.png",
+    "3-DeepLearning/Tensorflow 入门实战.md",
+    "image-augment.png",
+    "6-NLP",
+    "5-ComputerVision",
+    "1-EssentialBasics/1.1 高等数学.md",
+    "images/regression@2.webp",
+    "images/Pasted image 20250502102542.png",
+    "_sidebar.md",
+    "_navbar.md",
+    "images/transformer-simple.png",
+    "images/auto-encoder.png",
+    "Pasted image 20250502103151.png",
+    "IBM-AI-Engineer-Course/IBM-2-DL and NN with Keras.md",
+    "IBM-AI-Engineer-Course/jupyter-demo/IBM-2-3-1-Regression-Keras.ipynb",
+    "IBM-AI-Engineer-Course/jupyter-demo/IBM-2-3-1-Regression-NN.ipynb",
+    "anaconda_projects/db/project_filebrowser.db",
+    "anaconda_projects/db",
+    "anaconda_projects",
+    "README.md",
+    "1-EssentialBasics/1.3 概率论与数理统计.md",
+    "1-EssentialBasics/1.5 信息论基础 (信息熵、KL散度).md",
+    "1-EssentialBasics/1.4 机器学习工具.md",
+    "0-Preface/序2 - 学习路线图.md",
+    "1-EssentialBasics/1.2 线性代数.md",
+    "3-DeepLearning/3.1 神经网络与多层感知机.md",
+    "test/1.json",
+    "convert_obsidian_links.py",
+    "test/assignment.ipynb",
+    "未命名.canvas",
+    "9-RecommendSystem/谷歌搜索流程图.canvas",
+    "9-推荐系统/谷歌搜索流程图.canvas"
+  ]
+}
