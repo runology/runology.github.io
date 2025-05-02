@@ -11,10 +11,14 @@
             "id": "0bf5219b357ac379",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "English/未命名.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "未命名"
             }
           }
         ]
@@ -138,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "English/未命名.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "未命名 的大纲"
             }
           },
           {
@@ -176,6 +181,7 @@
   },
   "active": "0bf5219b357ac379",
   "lastOpenFiles": [
+    "English/未命名.md",
     "IBM-AI-Engineer-Course/IBM-0-Course Introduction and Study Plan.md",
     "5-ComputerVision/图像增强.md",
     "1-EssentialBasics/1.0 基础数学.md",
