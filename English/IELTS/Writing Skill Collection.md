@@ -1,4 +1,4 @@
-![[Writing-Skill-Collection.jpg]]
+![Writing-Skill-Collection.jpg](English/_images/Writing-Skill-Collection.jpg)
 # Language in Task 1
 
 ### Words frequently used in report

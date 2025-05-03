@@ -1,4 +1,4 @@
-![[IETLS-Writing-Grammar.jpg]]
+![IETLS-Writing-Grammar.jpg](English/_images/IETLS-Writing-Grammar.jpg)
 
 # Clauses
 

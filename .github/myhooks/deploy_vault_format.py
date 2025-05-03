@@ -34,4 +34,5 @@ if __name__ == "__main__":
     # Get all files
     print(f"生成索引,文件路径： {index} ")
 
-    convert_obsidian_md.main()
+    write_doc = convert_obsidian_md.process_markdown_files(base_dir)
+    print(f"重新生成链接,更新文档数： {write_doc} ")

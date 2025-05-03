@@ -1,4 +1,4 @@
-![[Presentation.jpg]]
+![Presentation.jpg](English/_images/Presentation.jpg)
 
 # Structure Of a Presentation
 

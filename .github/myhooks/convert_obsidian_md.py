@@ -87,11 +87,14 @@ def convert_obsidian_links(content, filename_index, module, root_path=''):
 
 
 def process_markdown_files(root_dir, write=True):
+    count = 0
     filename_index = load_filename_index(root_dir)
     for module in os.listdir(root_dir):
         if module not in include_modules:
             continue
-        for root, _, files in os.walk(root_dir + module):
+
+        for root, _, files in os.walk(root_dir + os.sep + module):
+
             # 计算相对路径
             rel_path = os.path.relpath(root, root_dir)
             root_path = '../' * (len(rel_path.split(os.sep)) - 1) if rel_path != '.' else ''
@@ -110,14 +113,8 @@ def process_markdown_files(root_dir, write=True):
                         if write and content != new_content:
                             with open(file_path, 'w', encoding='utf-8') as f:
                                 f.write(new_content)
+                                count += 1
                             print(f"Updated: {file_path}")
                     except Exception as e:
                         print(f"Error processing {file_path}: {str(e)}")
-
-
-def main():
-    parser = argparse.ArgumentParser(description='Convert Obsidian links to standard markdown links')
-    parser.add_argument('--dir', default='.', help='Root directory to scan (default: current directory)')
-    args = parser.parse_args()
-
-    process_markdown_files(args.dir)
+    return count
