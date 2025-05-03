@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
+import json
 import os
 import re
-import json
-import argparse
 from urllib.parse import quote
 
 include_modules = {"English"}
+
 
 def load_filename_index(root_dir):
     index_path = os.path.join(root_dir, '.github', 'filename_index.json')
@@ -35,17 +35,17 @@ def process_link(link, filename_index, module, root_path=''):
     encoded_filename = quote(filename)
 
     # 按路径分隔符分开，统计层数
-    levels = len(relative_path.split(os.sep))
+    reference_file_depth = len(relative_path.strip(os.sep).split(os.sep))
     # 每一层对应一个 "../"
-    root_path = '../' * (levels - 1)
+    root_path = '../' * reference_file_depth
 
     # 构建完整链接
+    # module_relative_path = relative_path.strip(os.sep).split("/", 1)[1] #模块内相对路径
     full_path = os.path.join(root_path, relative_path, encoded_filename)
     return full_path + anchor
 
 
-def convert_obsidian_links(content, filename_index, module, root_path=''):
-
+def convert_obsidian_links(content, filepath, filename_index, module, root_path=''):
     # 高亮 ==文本== 转换为 <font style="background-color:#FBDE28;color:black">文本</font>
     content = re.sub(
         r'===([^=]+)===',
@@ -57,18 +57,21 @@ def convert_obsidian_links(content, filename_index, module, root_path=''):
         r'<font style="background-color:yellow; color:black">\1</font>',
         content
     )
-
     # 处理图片和视频链接
     def is_allowed_suffix(filename):
-        return any(filename.lower().endswith(suffix) for suffix in [".jpg", ".jpeg", ".gif", ".png", ".bmp", ".mp4", ".mov"])
+        return any(
+            filename.lower().endswith(suffix) for suffix in [".jpg", ".jpeg", ".gif", ".png", ".bmp", ".mp4", ".mov"])
+
     def complex_image_url_convertor(m):
         image_filename = m.group(1)
         if image_filename.lower().endswith('.webp'):
-            return f'<img src="{process_link(image_filename, filename_index,module, root_path)}" alt="{os.path.basename(image_filename)}">'
+            return f'<img src="{process_link(image_filename, filename_index, module, root_path)}" alt="{os.path.basename(image_filename)}">'
         elif is_allowed_suffix(image_filename):
-            return f'![{os.path.basename(image_filename)}](/{module}/_images/{image_filename})'
+            md_file_levels = len(filename_index.get(module + os.sep + os.path.basename(filepath), '').strip(os.sep).split(os.sep))
+            relative_pre_path = '../' * (md_file_levels - 1)
+            return f'![{os.path.basename(image_filename)}]({relative_pre_path}_images/{image_filename})'
         else:
-            return f'![{os.path.basename(image_filename)}]({process_link(image_filename, filename_index,module, root_path)})'
+            return f'![{os.path.basename(image_filename)}]({process_link(image_filename, filename_index, module, root_path)})'
 
     content = re.sub(
         r'!\[\[([^\]]+)\]\]',
@@ -108,7 +111,8 @@ def process_markdown_files(root_dir, write=True):
                         with open(file_path, 'r', encoding='utf-8') as f:
                             content = f.read()
 
-                        new_content = convert_obsidian_links(content, filename_index,module=module, root_path=root_path)
+                        new_content = convert_obsidian_links(content, file_path, filename_index, module=module,
+                                                             root_path=root_path)
 
                         if write and content != new_content:
                             with open(file_path, 'w', encoding='utf-8') as f:

@@ -1,5 +1,5 @@
 
-![OralCommunication.jpg](/English/_images/OralCommunication.jpg)
+![OralCommunication.jpg](../_images/OralCommunication.jpg)
 
 ### Improve Communication
 

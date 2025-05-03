@@ -1,4 +1,4 @@
-![compare-contrast.jpg](/English/_images/compare-contrast.jpg)
+![compare-contrast.jpg](../_images/compare-contrast.jpg)
 
 
 # Structure

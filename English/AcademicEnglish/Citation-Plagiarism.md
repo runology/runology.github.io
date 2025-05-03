@@ -1,4 +1,4 @@
-![Plagiarism.jpg](/English/_images/Plagiarism.jpg)
+![Plagiarism.jpg](../_images/Plagiarism.jpg)
 
 
 # Long Essay General Form
