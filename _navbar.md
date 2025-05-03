@@ -1,3 +1,3 @@
 * [首页](README.md)
-* [英语学习](./English/English%20Learning%20Full%20Path.md)
-* [GitHub](https://github.com/runology/runology.github.io.git)
+* [English](English/English%20Learning%20Full%20Path.md)
+* [GitHub](https://github.com/jimmy-pink/jimmy-pink.github.io)
