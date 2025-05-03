@@ -36,7 +36,6 @@ class ArticleIndexGenerator:
 
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(self.index, f, ensure_ascii=False, indent=2)
-
         return output_file
 
     # 根据文件后缀名生成索引
