@@ -66,7 +66,7 @@ def convert_obsidian_links(content, filename_index, module, root_path=''):
         if image_filename.lower().endswith('.webp'):
             return f'<img src="{process_link(image_filename, filename_index,module, root_path)}" alt="{os.path.basename(image_filename)}">'
         elif is_allowed_suffix(image_filename):
-            return f'![{os.path.basename(image_filename)}]({module}/_images/{image_filename})'
+            return f'![{os.path.basename(image_filename)}](/{module}/_images/{image_filename})'
         else:
             return f'![{os.path.basename(image_filename)}]({process_link(image_filename, filename_index,module, root_path)})'
 
