@@ -1,27 +1,31 @@
 import json
 import os
 from pathlib import Path
-
+import convert_obsidian_md
 
 class ArticleIndexGenerator:
     def __init__(self, root_path):
         self.root_path = Path(root_path)
         self.index = {}
         # 要排除的目录名
-        self.exclude_dirs = {".git", ".idea", "test"}
+        self.exclude_dirs = {".obsidian", "_images"}
 
     def generate_index(self, with_ext):
         """Generate index mapping filenames (with or without extension) to their relative paths"""
-        for root, dirs, files in os.walk(self.root_path):
-            # 过滤掉要排除的目录
-            dirs[:] = [d for d in dirs if d not in self.exclude_dirs]
 
-            rel_path = os.path.relpath(root, self.root_path)
-            rel_path = "" if rel_path == "." else f"{rel_path}/"
+        for module in os.listdir(self.root_path):
+            if module not in convert_obsidian_md.include_modules:
+                continue
 
-            for file in files:
-                filename = file if with_ext else os.path.splitext(file)[0]
-                self.index[filename] = rel_path
+            for root, dirs, files in os.walk(self.root_path.joinpath(module)):
+                # 过滤掉要排除的目录
+                dirs[:] = [d for d in dirs if d not in self.exclude_dirs]
+
+                rel_path = os.path.relpath(root, self.root_path)
+                rel_path = "" if rel_path == "." else f"{rel_path}/"
+                for file in files:
+                    filename = file if with_ext else os.path.splitext(file)[0]
+                    self.index[module + "/" + filename] = rel_path
 
         return self.index
 
@@ -48,5 +52,3 @@ class ArticleIndexGenerator:
                           if any(k.lower().endswith(ext.lower()) for ext in extensions)}
 
         return filtered_index
-
-

@@ -1,0 +1,177 @@
+{
+  "main": {
+    "id": "b496eed5d82af8d7",
+    "type": "split",
+    "children": [
+      {
+        "id": "9868af209d416f4b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae4877b18280d864",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "English/OralCommunication/OralCommunicationSkills.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "OralCommunicationSkills"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7f342d0ea5c50575",
+    "type": "split",
+    "children": [
+      {
+        "id": "78beb378ded09e5c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "360763379ae16e2f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "98b2daebb97d69a7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "d9c4f39c3512eead",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "8a1cf3692fa3a1da",
+    "type": "split",
+    "children": [
+      {
+        "id": "f532af2b3e928ec3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5b17d84c3ae0bb1d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "English/OralCommunication/OralCommunicationSkills.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "OralCommunicationSkills 的反向链接列表"
+            }
+          },
+          {
+            "id": "91632658ff3d6e47",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "English/OralCommunication/OralCommunicationSkills.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "OralCommunicationSkills 的出链列表"
+            }
+          },
+          {
+            "id": "5747b963605005fb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "4b817dbe05b0526c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "English/OralCommunication/OralCommunicationSkills.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "OralCommunicationSkills 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "ae4877b18280d864",
+  "lastOpenFiles": [
+    "English/English Learning Full Path.md",
+    "English/Presentation/Presentation-Full-Guide.md",
+    "English/OralCommunication/OralCommunicationSkills.md"
+  ]
+}

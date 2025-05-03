@@ -5,27 +5,31 @@ import json
 import argparse
 from urllib.parse import quote
 
+include_modules = {"English"}
 
 def load_filename_index(root_dir):
-    index_path = os.path.join(root_dir, '.obsidian', 'filename_index.json')
+    index_path = os.path.join(root_dir, '.github', 'filename_index.json')
     if os.path.exists(index_path):
         with open(index_path, 'r', encoding='utf-8') as f:
             return json.load(f)
     return {}
 
 
-def process_link(link, filename_index, root_path=''):
+def process_link(link, filename_index, module, root_path=''):
     # 分离文件名和锚点
     parts = link.split('#', 1)
     filename = parts[0]
     anchor = '#' + parts[1] if len(parts) > 1 else ''
+
+    if str.startswith(filename, "/"):
+        filename = filename[1:]
 
     # 处理文件扩展名
     if not filename.endswith('.md') and not '.' in filename:
         filename += '.md'
 
     # 获取相对路径
-    relative_path = filename_index.get(filename, '')
+    relative_path = filename_index.get(module + os.sep + filename, '')
 
     # URL 编码文件名部分
     encoded_filename = quote(filename)
@@ -40,7 +44,8 @@ def process_link(link, filename_index, root_path=''):
     return full_path + anchor
 
 
-def convert_obsidian_links(content, filename_index, root_path=''):
+def convert_obsidian_links(content, filename_index, module, root_path=''):
+
     # 高亮 ==文本== 转换为 <font style="background-color:#FBDE28;color:black">文本</font>
     content = re.sub(
         r'===([^=]+)===',
@@ -54,13 +59,20 @@ def convert_obsidian_links(content, filename_index, root_path=''):
     )
 
     # 处理图片和视频链接
+    def is_allowed_suffix(filename):
+        return any(filename.lower().endswith(suffix) for suffix in [".jpg", ".jpeg", ".gif", ".png", ".bmp", ".mp4", ".mov"])
+    def complex_image_url_convertor(m):
+        image_filename = m.group(1)
+        if image_filename.lower().endswith('.webp'):
+            return f'<img src="{process_link(image_filename, filename_index,module, root_path)}" alt="{os.path.basename(image_filename)}">'
+        elif is_allowed_suffix(image_filename):
+            return f'![{os.path.basename(image_filename)}]({module}/_images/{image_filename})'
+        else:
+            return f'![{os.path.basename(image_filename)}]({process_link(image_filename, filename_index,module, root_path)})'
+
     content = re.sub(
         r'!\[\[([^\]]+)\]\]',
-        lambda m: (
-            f'<img src="{process_link(m.group(1), filename_index, root_path)}" alt="{os.path.basename(m.group(1))}">'
-            if m.group(1).lower().endswith('.webp')
-            else f'![{os.path.basename(m.group(1))}]({process_link(m.group(1), filename_index, root_path)})'
-        ),
+        lambda m: complex_image_url_convertor(m),
         content
     )
 
@@ -68,38 +80,39 @@ def convert_obsidian_links(content, filename_index, root_path=''):
     content = re.sub(
         r'\[\[([^|\]]+)(?:\|([^\]]+))?\]\]',
         lambda
-            m: f'[{m.group(2) if m.group(2) else m.group(1)}]({process_link(m.group(1), filename_index, root_path)})',
+            m: f'[{m.group(2) if m.group(2) else m.group(1)}]({process_link(m.group(1), filename_index, module, root_path)})',
         content
     )
-
     return content
 
 
-def process_markdown_files(root_dir):
+def process_markdown_files(root_dir, write=True):
     filename_index = load_filename_index(root_dir)
+    for module in os.listdir(root_dir):
+        if module not in include_modules:
+            continue
+        for root, _, files in os.walk(root_dir + module):
+            # 计算相对路径
+            rel_path = os.path.relpath(root, root_dir)
+            root_path = '../' * (len(rel_path.split(os.sep)) - 1) if rel_path != '.' else ''
 
-    for root, _, files in os.walk(root_dir):
-        # 计算相对路径
-        rel_path = os.path.relpath(root, root_dir)
-        root_path = '../' * (len(rel_path.split(os.sep)) - 1) if rel_path != '.' else ''
+            for file in files:
+                if file.endswith('.md'):
+                    file_path = os.path.join(root, file)
+                    print(f"Processing: {file_path}")
 
-        for file in files:
-            if file.endswith('.md'):
-                file_path = os.path.join(root, file)
-                print(f"Processing: {file_path}")
+                    try:
+                        with open(file_path, 'r', encoding='utf-8') as f:
+                            content = f.read()
 
-                try:
-                    with open(file_path, 'r', encoding='utf-8') as f:
-                        content = f.read()
+                        new_content = convert_obsidian_links(content, filename_index,module=module, root_path=root_path)
 
-                    new_content = convert_obsidian_links(content, filename_index, root_path)
-
-                    if content != new_content:
-                        with open(file_path, 'w', encoding='utf-8') as f:
-                            f.write(new_content)
-                        print(f"Updated: {file_path}")
-                except Exception as e:
-                    print(f"Error processing {file_path}: {str(e)}")
+                        if write and content != new_content:
+                            with open(file_path, 'w', encoding='utf-8') as f:
+                                f.write(new_content)
+                            print(f"Updated: {file_path}")
+                    except Exception as e:
+                        print(f"Error processing {file_path}: {str(e)}")
 
 
 def main():

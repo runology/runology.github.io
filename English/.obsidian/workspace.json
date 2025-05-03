@@ -15,7 +15,7 @@
               "state": {
                 "file": "English Learning Full Path.md",
                 "mode": "preview",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
               "title": "English Learning Full Path"
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "English Learning Full Path.md",
+                "file": "English/OralCommunication/OralCommunicationSkills.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "English Learning Full Path 的大纲"
+              "title": "OralCommunicationSkills 的大纲"
             }
           },
           {
@@ -180,10 +180,31 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "cb604474af54df4d",
+  "active": "40e04f8cbdb1f2f7",
   "lastOpenFiles": [
-    "Presentation/Presentation-Full-Guide.md",
     "English Learning Full Path.md",
+    "English/OralCommunication/OralCommunicationSkills.md",
+    "English/OralCommunication",
+    "English",
+    "_images/compare-contrast.jpg",
+    "_images/Writing-Skill-Collection.jpg",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0/Untitled.png",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0/Untitled 6.png",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0/Untitled 5.png",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0/Untitled 4.png",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0/Untitled 3.png",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0/Untitled 2.png",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0/Untitled 1.png",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0",
+    "_images/Writing Compare & Contrast 272a293c3b72432a97f25b75b7061400/Untitled.png",
+    "_images/Writing Compare & Contrast 272a293c3b72432a97f25b75b7061400",
+    "_images/Research Paper Argumentative Long Essay 83cbfcd1c8a14b3da5a558d7302b3622",
+    "_images/Presentation Full Guide 2f0ce4e69a8c4ea59677edfc3ef800e4",
+    "_images/Oral Communication Skills d17863f6b9e643bf9e68d4bf897eacfc",
+    "_images/IELTS Writing Skill Collection b19d58dd6e6143588701597539070fbd",
+    "_images/Citation & Plagiarism 69904b0f445b43ec872f6c9f68a41fbd",
+    "Presentation/Presentation-Full-Guide.md",
+    "Presentation",
     "OralCommunication/OralCommunicationSkills.md",
     "IELTS/WritingSkills-Compare&Contrast.md",
     "IELTS/Writing Skill Collection.md",
@@ -191,28 +212,8 @@
     "AcademicEnglish/Research Paper Argumentative Long Essay.md",
     "AcademicEnglish/Citation-Plagiarism.md",
     "AcademicEnglish/Citation %26 Plagiarism.md",
-    "_images/OralCommunication.jpg",
-    "_images/Presentation.jpg",
     "IELTS/WiringSkills-Compare&Contrast.md",
-    "_images/compare-contrast.jpg",
-    "_images/Writing-Skill-Collection.jpg",
-    "_images/Research Paper Argumentative Long Essay 83cbfcd1c8a14b3da5a558d7302b3622/Untitled.png",
-    "_images/IETLS-Writing-Grammar.jpg",
-    "_images/Plagiarism.jpg",
-    "_images/Long-Argumentative-Essay.jpg",
-    "_images/Research Paper Argumentative Long Essay 83cbfcd1c8a14b3da5a558d7302b3622/Untitled 9.png",
-    "_images/Research Paper Argumentative Long Essay 83cbfcd1c8a14b3da5a558d7302b3622/Untitled 8.png",
-    "_images/Research Paper Argumentative Long Essay 83cbfcd1c8a14b3da5a558d7302b3622",
-    "Presentation",
-    "_images/Presentation Full Guide 2f0ce4e69a8c4ea59677edfc3ef800e4",
-    "_images/Writing Compare & Contrast 272a293c3b72432a97f25b75b7061400",
-    "_images/Oral Communication Skills d17863f6b9e643bf9e68d4bf897eacfc",
-    "OralCommunication",
-    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0",
-    "_images/IELTS Writing Skill Collection b19d58dd6e6143588701597539070fbd",
-    "IELTS",
     "AcademicEnglish/Citation & Plagiarism 69904b0f445b43ec872f6c9f68a41fbd.md",
-    "_images/Citation & Plagiarism 69904b0f445b43ec872f6c9f68a41fbd",
     "_sidebar.md",
     "_navbar.md",
     "English/English Learning Full Path.md",
