@@ -1,0 +1,236 @@
+{
+  "main": {
+    "id": "6a823f62b207d0b0",
+    "type": "split",
+    "children": [
+      {
+        "id": "935ffe3f5dd6e324",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb604474af54df4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "English Learning Full Path.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "English Learning Full Path"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "989fa3b213fec470",
+    "type": "split",
+    "children": [
+      {
+        "id": "b00fd101e00f11be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "40e04f8cbdb1f2f7",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "000821c21fb047c2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "8e5d81fc6b8170fa",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 294.5
+  },
+  "right": {
+    "id": "0e1756b3ee60238b",
+    "type": "split",
+    "children": [
+      {
+        "id": "b0ba2ddc990711d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "047feed725748d2c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "3-DeepLearning/3.1 神经元和神经网络.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "3.1 神经元和神经网络 的反向链接列表"
+            }
+          },
+          {
+            "id": "a63f8c1d220429bc",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "3-DeepLearning/3.1 神经元和神经网络.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "3.1 神经元和神经网络 的出链列表"
+            }
+          },
+          {
+            "id": "b07137a7d6c09304",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e3045da1741fa3c9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "English/OralCommunication/OralCommunicationSkills.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "OralCommunicationSkills 的大纲"
+            }
+          },
+          {
+            "id": "57df933338ca1612",
+            "type": "leaf",
+            "state": {
+              "type": "copilot-chat-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "插件不再活动"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 268.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": true,
+      "daily-notes:打开/创建今天的日记": true,
+      "templates:插入模板": true,
+      "command-palette:打开命令面板": false,
+      "copilot:Open Copilot Chat": false
+    }
+  },
+  "active": "40e04f8cbdb1f2f7",
+  "lastOpenFiles": [
+    "English Learning Full Path.md",
+    "English/OralCommunication/OralCommunicationSkills.md",
+    "English/OralCommunication",
+    "English",
+    "_images/compare-contrast.jpg",
+    "_images/Writing-Skill-Collection.jpg",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0/Untitled.png",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0/Untitled 6.png",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0/Untitled 5.png",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0/Untitled 4.png",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0/Untitled 3.png",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0/Untitled 2.png",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0/Untitled 1.png",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0",
+    "_images/Writing Compare & Contrast 272a293c3b72432a97f25b75b7061400/Untitled.png",
+    "_images/Writing Compare & Contrast 272a293c3b72432a97f25b75b7061400",
+    "_images/Research Paper Argumentative Long Essay 83cbfcd1c8a14b3da5a558d7302b3622",
+    "_images/Presentation Full Guide 2f0ce4e69a8c4ea59677edfc3ef800e4",
+    "_images/Oral Communication Skills d17863f6b9e643bf9e68d4bf897eacfc",
+    "_images/IELTS Writing Skill Collection b19d58dd6e6143588701597539070fbd",
+    "_images/Citation & Plagiarism 69904b0f445b43ec872f6c9f68a41fbd",
+    "Presentation/Presentation-Full-Guide.md",
+    "Presentation",
+    "OralCommunication/OralCommunicationSkills.md",
+    "IELTS/WritingSkills-Compare&Contrast.md",
+    "IELTS/Writing Skill Collection.md",
+    "IELTS/Writing Grammar.md",
+    "AcademicEnglish/Research Paper Argumentative Long Essay.md",
+    "AcademicEnglish/Citation-Plagiarism.md",
+    "AcademicEnglish/Citation %26 Plagiarism.md",
+    "IELTS/WiringSkills-Compare&Contrast.md",
+    "AcademicEnglish/Citation & Plagiarism 69904b0f445b43ec872f6c9f68a41fbd.md",
+    "_sidebar.md",
+    "_navbar.md",
+    "English/English Learning Full Path.md",
+    "IBM-AI-Engineer-Course/IBM-0-Course Introduction and Study Plan.md",
+    "5-ComputerVision/图像增强.md",
+    "1-EssentialBasics/1.0 基础数学.md",
+    "3-DeepLearning/3.3 卷积神经网络 CNN.md",
+    "3-DeepLearning/3.2 深度学习模型 (分类).md",
+    "3-DeepLearning/3.1 神经元和神经网络.md",
+    "2-MachineLearning/机器学习图谱.canvas",
+    "2-MachineLearning/2.7 模型评估、调优与实践.md",
+    "2-MachineLearning/2.6 无监督学习常用算法.md",
+    "2-MachineLearning/2.5 监督学习常用算法.md",
+    "2-MachineLearning/2.4 梯度下降和损失函数.md",
+    "2-MachineLearning/2.3 特征和特征工程.md",
+    "未命名.canvas",
+    "9-RecommendSystem/谷歌搜索流程图.canvas",
+    "9-推荐系统/谷歌搜索流程图.canvas"
+  ]
+}
