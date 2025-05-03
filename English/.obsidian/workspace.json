@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "fc93e65be75d61b0",
+        "id": "935ffe3f5dd6e324",
         "type": "tabs",
         "children": [
           {
-            "id": "0bf5219b357ac379",
+            "id": "cb604474af54df4d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "English/未命名.md",
-                "mode": "source",
-                "source": false
+                "file": "English Learning Full Path.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "未命名"
+              "title": "English Learning Full Path"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "English/未命名.md",
+                "file": "English Learning Full Path.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "未命名 的大纲"
+              "title": "English Learning Full Path 的大纲"
             }
           },
           {
@@ -166,7 +166,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 268.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -179,9 +180,42 @@
       "copilot:Open Copilot Chat": false
     }
   },
-  "active": "0bf5219b357ac379",
+  "active": "cb604474af54df4d",
   "lastOpenFiles": [
-    "English/未命名.md",
+    "Presentation/Presentation-Full-Guide.md",
+    "English Learning Full Path.md",
+    "OralCommunication/OralCommunicationSkills.md",
+    "IELTS/WritingSkills-Compare&Contrast.md",
+    "IELTS/Writing Skill Collection.md",
+    "IELTS/Writing Grammar.md",
+    "AcademicEnglish/Research Paper Argumentative Long Essay.md",
+    "AcademicEnglish/Citation-Plagiarism.md",
+    "AcademicEnglish/Citation %26 Plagiarism.md",
+    "_images/OralCommunication.jpg",
+    "_images/Presentation.jpg",
+    "IELTS/WiringSkills-Compare&Contrast.md",
+    "_images/compare-contrast.jpg",
+    "_images/Writing-Skill-Collection.jpg",
+    "_images/Research Paper Argumentative Long Essay 83cbfcd1c8a14b3da5a558d7302b3622/Untitled.png",
+    "_images/IETLS-Writing-Grammar.jpg",
+    "_images/Plagiarism.jpg",
+    "_images/Long-Argumentative-Essay.jpg",
+    "_images/Research Paper Argumentative Long Essay 83cbfcd1c8a14b3da5a558d7302b3622/Untitled 9.png",
+    "_images/Research Paper Argumentative Long Essay 83cbfcd1c8a14b3da5a558d7302b3622/Untitled 8.png",
+    "_images/Research Paper Argumentative Long Essay 83cbfcd1c8a14b3da5a558d7302b3622",
+    "Presentation",
+    "_images/Presentation Full Guide 2f0ce4e69a8c4ea59677edfc3ef800e4",
+    "_images/Writing Compare & Contrast 272a293c3b72432a97f25b75b7061400",
+    "_images/Oral Communication Skills d17863f6b9e643bf9e68d4bf897eacfc",
+    "OralCommunication",
+    "_images/Writing Grammar 9ba6b9456a864ec793742c4be3f676e0",
+    "_images/IELTS Writing Skill Collection b19d58dd6e6143588701597539070fbd",
+    "IELTS",
+    "AcademicEnglish/Citation & Plagiarism 69904b0f445b43ec872f6c9f68a41fbd.md",
+    "_images/Citation & Plagiarism 69904b0f445b43ec872f6c9f68a41fbd",
+    "_sidebar.md",
+    "_navbar.md",
+    "English/English Learning Full Path.md",
     "IBM-AI-Engineer-Course/IBM-0-Course Introduction and Study Plan.md",
     "5-ComputerVision/图像增强.md",
     "1-EssentialBasics/1.0 基础数学.md",
@@ -194,40 +228,6 @@
     "2-MachineLearning/2.5 监督学习常用算法.md",
     "2-MachineLearning/2.4 梯度下降和损失函数.md",
     "2-MachineLearning/2.3 特征和特征工程.md",
-    "2-MachineLearning/2.2 机器学习的分类.md",
-    "2-MachineLearning/2.1 机器学习概述.md",
-    "Pasted image 20250502222612.png",
-    "Pasted image 20250502222547.png",
-    "Pasted image 20250502222212.png",
-    "Pasted image 20250502222145.png",
-    "3-DeepLearning/Tensorflow 入门实战.md",
-    "image-augment.png",
-    "6-NLP",
-    "5-ComputerVision",
-    "1-EssentialBasics/1.1 高等数学.md",
-    "images/regression@2.webp",
-    "images/Pasted image 20250502102542.png",
-    "_sidebar.md",
-    "_navbar.md",
-    "images/transformer-simple.png",
-    "images/auto-encoder.png",
-    "Pasted image 20250502103151.png",
-    "IBM-AI-Engineer-Course/IBM-2-DL and NN with Keras.md",
-    "IBM-AI-Engineer-Course/jupyter-demo/IBM-2-3-1-Regression-Keras.ipynb",
-    "IBM-AI-Engineer-Course/jupyter-demo/IBM-2-3-1-Regression-NN.ipynb",
-    "anaconda_projects/db/project_filebrowser.db",
-    "anaconda_projects/db",
-    "anaconda_projects",
-    "README.md",
-    "1-EssentialBasics/1.3 概率论与数理统计.md",
-    "1-EssentialBasics/1.5 信息论基础 (信息熵、KL散度).md",
-    "1-EssentialBasics/1.4 机器学习工具.md",
-    "0-Preface/序2 - 学习路线图.md",
-    "1-EssentialBasics/1.2 线性代数.md",
-    "3-DeepLearning/3.1 神经网络与多层感知机.md",
-    "test/1.json",
-    "convert_obsidian_links.py",
-    "test/assignment.ipynb",
     "未命名.canvas",
     "9-RecommendSystem/谷歌搜索流程图.canvas",
     "9-推荐系统/谷歌搜索流程图.canvas"
