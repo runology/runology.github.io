@@ -1,5 +1,5 @@
 
-![Long-Argumentative-Essay.jpg](English/_images/Long-Argumentative-Essay.jpg)
+![Long-Argumentative-Essay.jpg](/English/_images/Long-Argumentative-Essay.jpg)
 
 
 <aside>
